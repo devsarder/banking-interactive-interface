@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h3 class="text-5xl text-center mt-5 my-6">
+        Let's Get Some
+        <span class="text-indigo-700">Money!!!</span>
+      </h3>
+    </header>
+
+    <main>
+      <div class="grid grid-cols-3 gap-4 mt-10 w-9/12 mx-auto">
+        <div class="bg-green-400 rounded-lg p-5">
+          <h3 class="text-3xl">Deposit</h3>
+          <p id="updated-deposit" class="text-5xl">$00</p>
+        </div>
+        <div class="bg-violet-400 rounded-lg p-5">
+          <h3 class="text-3xl">Withdraw</h3>
+          <p id="updated-withdraw" class="text-5xl">$00</p>
+        </div>
+        <div class="bg-yellow-400 rounded-lg p-5">
+          <h3 class="text-3xl">Balance</h3>
+          <p id="updated-balance" class="text-5xl">$1240</p>
+        </div>
+      </div>
+
+      <!-- deposit and withdraw-->
+      <section class="grid grid-cols-2 gap-4 mt-10 w-9/12 mx-auto text-white">
+        <div class="bg-cyan-800 p-4 rounded-lg">
+          <h4 class="text-3xl">Please Deposit</h4>
+          <div class="w-9/12 mx-auto mt-4">
+            <input
+              class="block w-9/12 placeholder:text-sm px-3 mb-3 py-1 rounded-lg"
+              type="number"
+              name=""
+              id="balance-deposit"
+              placeholder="$ Amount You Want to Deposit"
+            />
+            <button
+              id="btn-deposit"
+              class="bg-orange-500 hover:bg-blue-800 text-cyan-50 px-5 py-2 rounded-lg"
+            >
+              Deposit
+            </button>
+          </div>
+        </div>
+        <div class="bg-blue-400 p-4 rounded-lg">
+          <h4 class="text-3xl">Please withdraw--</h4>
+          <div class="w-9/12 mx-auto mt-4">
+            <input
+              class="block w-9/12 placeholder:text-sm px-3 mb-3 py-1 rounded-lg"
+              type="number"
+              name=""
+              id="balance-withdraw"
+              placeholder="$ Amount You Want to Deposit"
+            />
+            <button
+              id="btn-withdraw"
+              class="bg-blue-500 hover:bg-blue-800 text-cyan-50 px-5 py-2 rounded-lg"
+            >
+              withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
